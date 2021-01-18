@@ -1,0 +1,107 @@
+/* +-----------------------+ */
+/* |     Default Setup     | */
+/* +-----------------------+ */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #ffffff;
+    color: #5a5a5a;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* +----------------+ */
+/* |     Header     | */
+/* +----------------+ */
+header {
+    background: linear-gradient(45deg, rgba(48, 60, 108, 0.7), rgba(244, 151, 108, 0.65), rgba(251, 232, 166, 0.6)), url(../img/header_background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.githublogo {
+    width: 50px;
+    float: left;
+    margin-left: 50px;
+    margin-top: 25px;
+}
+
+.headerlink {
+    float: right;
+    list-style: none;
+    margin-top: 50px;
+    margin-right: 50px;
+}
+
+.headerlink li {
+    display: inline-block;
+    margin-right: 25px;
+}
+
+.headerlink li a {
+    text-decoration: none;
+    color: white;
+    font-size: 110%;
+    font-weight: 700;
+    transition: all 0.5s;
+    padding: 2.5px 0px;
+}
+
+.headerlink li a:hover,
+.headerlink li a:active {
+    border-bottom: 2.5px solid #555555;
+}
+
+.box {
+    max-width: 1140px;
+    margin: 0px auto;
+}
+
+.headerbox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-45%, -55%);
+    width: 1140px;
+}
+
+.greeting {
+    font-size: 250%;
+    font-weight: 400;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    color: white;
+    line-height: 125%;
+    margin-bottom: 25px;
+}
+
+.button {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(74, 75, 133);
+    padding: 15px 30px;
+    border-radius: 25px;
+    margin: 0px 5px;
+    width: 200px;
+    display: inline-block;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.button:hover,
+.button:active {
+    background-color: rgb(8, 29, 114);
+}
