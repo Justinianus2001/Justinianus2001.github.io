@@ -1,6 +1,6 @@
-/* +-----------------------+ */
-/* |     Default Setup     | */
-/* +-----------------------+ */
+/* +-----------------+ */
+/* |     Default     | */
+/* +-----------------+ */
 * {
     margin: 0px;
     padding: 0px;
@@ -15,23 +15,99 @@ html {
     text-rendering: optimizeLegibility;
 }
 
+/* +------------------+ */
+/* |     Reusable     | */
+/* +------------------+ */
 .clearfix::after {
     content: "";
     display: table;
     clear: both;
 }
 
-/* +----------------+ */
-/* |     Header     | */
-/* +----------------+ */
-header {
-    background: linear-gradient(45deg, rgba(48, 60, 108, 0.7), rgba(244, 151, 108, 0.65), rgba(251, 232, 166, 0.6)), url(../img/header_background.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+h1 {
+    font-size: 250%;
+    font-weight: 400;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    color: white;
+    line-height: 125%;
+    margin-bottom: 40px;
+}
+
+h2 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #303C6C;
+    font-size: 200%;
+    font-weight: 700;
+    text-align: center;
+}
+
+h2::after {
+    content: "";
+    display: block;
+    width: 150px;
+    height: 3px;
+    background-color: #303C6C;
+    margin: 5px auto 0px auto;
+}
+
+header, section {
     height: 100vh;
 }
 
+header {
+    background: linear-gradient(45deg, rgba(48, 60, 108, 0.6), rgba(244, 151, 108, 0.55), rgba(251, 232, 166, 0.5)), url(../img/header_background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+section {
+    padding: 50px;
+    background-color: rgb(251, 232, 166);
+}
+
+.box {
+    max-width: 1140px;
+    margin: 0px auto;
+}
+
+.box em,
+.box p {
+    text-align: center;
+}
+
+.button {
+    text-decoration: none;
+    color: darkblue;
+    border: 3px solid darkblue;
+    padding: 15px 30px;
+    border-radius: 25px;
+    margin: 0px 5px;
+    width: 200px;
+    display: inline-block;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.button:hover,
+.button:active {
+    background-color: darkblue;
+    color: white;
+}
+
+.text {
+    display: block;
+    text-align: center;
+    font-size: 100%;
+    margin: 40px 15% 40px 15%;
+    line-height: 150%;
+}
+
+/* +----------------+ */
+/* |     Header     | */
+/* +----------------+ */
 .githublogo {
     width: 50px;
     float: left;
@@ -65,11 +141,6 @@ header {
     border-bottom: 2.5px solid #555555;
 }
 
-.box {
-    max-width: 1140px;
-    margin: 0px auto;
-}
-
 .headerbox {
     position: absolute;
     top: 50%;
@@ -78,30 +149,62 @@ header {
     width: 1140px;
 }
 
-.greeting {
-    font-size: 250%;
-    font-weight: 400;
-    letter-spacing: 1px;
-    word-spacing: 5px;
-    color: white;
-    line-height: 125%;
-    margin-bottom: 25px;
+/* +-----------------+ */
+/* |     Section     | */
+/* +-----------------+ */
+.textbox p {
+    width: 95%;
+    height: 300px;
+    background-color: rgba(244, 151, 108, 0.3);
+    border-radius: 20px;
+    border: 3px solid #D2FDFF;
+    padding: 10px;
+    color: black;
+    box-shadow: 5px 5px 15px 5px #303C6C;
 }
 
-.button {
-    text-decoration: none;
-    color: white;
-    background-color: rgb(74, 75, 133);
-    padding: 15px 30px;
-    border-radius: 25px;
-    margin: 0px 5px;
-    width: 200px;
-    display: inline-block;
+.skillbar {
+    margin: 50px 0px 0px 0px;
     text-align: center;
-    transition: all 0.3s;
+    position: relative;
+    display: inline-block;
 }
 
-.button:hover,
-.button:active {
-    background-color: rgb(8, 29, 114);
+.skillicon {
+    height: 50%;
+    width: 50%;
+    margin: 0px 25%;
+    border-radius: 50%;
+    border: 2px solid #F4976C;
+    box-shadow: 5px 5px 15px 5px #F4976C;
+}
+
+.skillicon img {
+    border-radius: 50%;
+    width: 100%;
+    transition: all 0.5s;
+    background-color: #F0DB4F;
+}
+
+.skillicon:hover img,
+.skillicon:active img {
+    filter: brightness(50%) blur(2px);
+}
+
+.skilltitle {
+    color: white;
+    font-size: 150%;
+    font-weight: 700;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    opacity: 0;
+    transform: translate(-50%, 150%);
+    transition: all 0.5s;
+}
+
+.skillicon:hover .skilltitle,
+.skillicon:active .skilltitle {
+    transform: translate(-50%, -50%);
+    opacity: 1;
 }

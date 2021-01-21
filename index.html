@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Justinianus (Lê Ngọc Hoàng)</title>
+        <title>Justinianus (Le Ngoc Hoang)</title>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="./vendors/css/grid.css">
         <link rel="stylesheet" type="text/css" href="./resources/css/style.css">
     </head>
     <body>
@@ -19,18 +20,91 @@
                 <li><a href="https://codeforces.com/profile/Justinianus2001">Codeforces</a></li>
             </ul>
             <div class="clearfix"></div>
-            <div class="box">
-                <div class="headerbox">
-                    <h1 class="greeting">
-                        Hi! I'm Justinianus <br>
-                        An IT student from Hue, Vietnam. <br>
-                        Welcome to my github website.
-                    </h1>
-                    <a class="button" href="#">About Me</a>
-                    <a class="button" href="#">Awards</a>
-                    <a class="button" href="#">Contact</a>
-                </div>
+            <div class="box headerbox">
+                <h1>
+                    Hi! I'm Justinianus <br>
+                    An IT student from Hue, Vietnam. <br>
+                    Welcome to my github website.
+                </h1>
+                <a href="#" class="button">About Me</a>
+                <a href="#" class="button">My Skills</a>
+                <a href="#" class="button">Awards</a>
+                <a href="#" class="button">Contact</a>
             </div>
         </header>
+        <section class="aboutme">
+            <div class="box">
+                <h2>About Me</h2>
+                <em class="text">
+                    Quote.
+                </em>
+            </div>
+            <div class="box">
+                <div class="col span_1_of_3 textbox">
+                    <p>Information.</p>
+                </div>
+                <div class="col span_1_of_3 textbox">
+                    <p>Education.</p>
+                </div>
+                <div class="col span_1_of_3 textbox">
+                    <p>Experience.</p>
+                </div>
+            </div>
+        </section>
+        <section class="skill">
+            <h2 class="box">My Skills</h2>
+            <div class="box">
+                <div class="col span_1_of_3 skillbar">
+                    <div class="skillicon">
+                        <img src="./resources/img/cpp.png" alt="C++">
+                        <p class="skilltitle">
+                            C++ <br> 80%
+                        </p>
+                    </div>
+                </div>
+                <div class="col span_1_of_3 skillbar">
+                    <div class="skillicon">
+                        <img src="./resources/img/java.png" alt="Java">
+                        <p class="skilltitle">
+                            Java <br> 40%
+                        </p>
+                    </div>
+                </div>
+                <div class="col span_1_of_3 skillbar">
+                    <div class="skillicon">
+                        <img src="./resources/img/python.png" alt="Python">
+                        <p class="skilltitle">
+                            Python <br> 50%
+                        </p>
+                    </div>
+                </div>
+                <br>
+                <div class="clearfix"></div>
+                <div class="col span_1_of_3 skillbar">
+                    <div class="skillicon">
+                        <img src="./resources/img/html.png" alt="HTML5">
+                        <p class="skilltitle">
+                            HTML5 <br> 60%
+                        </p>
+                    </div>
+                </div>
+                <div class="col span_1_of_3 skillbar">
+                    <div class="skillicon">
+                        <img src="./resources/img/css.png" alt="CSS3">
+                        <p class="skilltitle">
+                            CSS3 <br> 60%
+                        </p>
+                    </div>
+                </div>
+                <div class="col span_1_of_3 skillbar">
+                    <div class="skillicon">
+                        <img src="./resources/img/js.png" alt="Javascript">
+                        <p class="skilltitle">
+                            Javascript <br> 10%
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </body>
 </html>
