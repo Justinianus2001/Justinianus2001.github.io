@@ -24,10 +24,13 @@ html {
     clear: both;
 }
 
+h1, h2 {
+    letter-spacing: 1px;
+}
+
 h1 {
     font-size: 250%;
-    font-weight: 400;
-    letter-spacing: 1px;
+    font-weight: 700;
     word-spacing: 5px;
     color: white;
     line-height: 125%;
@@ -36,7 +39,6 @@ h1 {
 
 h2 {
     text-transform: uppercase;
-    letter-spacing: 1px;
     color: #303C6C;
     font-size: 200%;
     font-weight: 700;
@@ -52,12 +54,17 @@ h2::after {
     margin: 5px auto 0px auto;
 }
 
+ul {
+    list-style-type: none;
+}
+
 header, section {
     height: 100vh;
 }
 
 header {
-    background: linear-gradient(45deg, rgba(48, 60, 108, 0.6), rgba(244, 151, 108, 0.55), rgba(251, 232, 166, 0.5)), url(../img/header_background.jpg);
+    background: linear-gradient(45deg, rgba(48, 60, 108, 0.6), 
+        rgba(244, 151, 108, 0.55), rgba(251, 232, 166, 0.5)), url(../img/header_background.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -65,7 +72,6 @@ header {
 
 section {
     padding: 50px;
-    background-color: rgb(251, 232, 166);
 }
 
 .box {
@@ -95,14 +101,6 @@ section {
 .button:active {
     background-color: darkblue;
     color: white;
-}
-
-.text {
-    display: block;
-    text-align: center;
-    font-size: 100%;
-    margin: 40px 15% 40px 15%;
-    line-height: 150%;
 }
 
 /* +----------------+ */
@@ -149,21 +147,92 @@ section {
     width: 1140px;
 }
 
-/* +-----------------+ */
-/* |     Section     | */
-/* +-----------------+ */
-.textbox p {
-    width: 95%;
-    height: 300px;
-    background-color: rgba(244, 151, 108, 0.3);
-    border-radius: 20px;
-    border: 3px solid #D2FDFF;
-    padding: 10px;
-    color: black;
-    box-shadow: 5px 5px 15px 5px #303C6C;
+/* +-------------------+ */
+/* |     Section 0     | */
+/* +-------------------+ */
+/* .spacing {
+    height: 50vh;
+    background: linear-gradient(45deg, rgba(48, 60, 108, 0.6), 
+        rgba(244, 151, 108, 0.55), rgba(251, 232, 166, 0.5)), url(../img/header_background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+} */
+
+/* +-------------------+ */
+/* |     Section 1     | */
+/* +-------------------+ */
+.aboutme {
+    background-color: rgba(251, 232, 166, 0.9);
 }
 
-.skillbar {
+.quote {
+    line-height: 150%;
+    text-align: center;
+    margin-top: 25px;
+    position: relative;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.quote:before {
+    content: "\201C";
+    font-size: 400%;
+    position: absolute;
+    top: -5%;
+    left: 35%;
+}
+
+.quote:after {
+    content: "\201E";
+    font-size: 400%;
+    position: absolute;
+    top: 5%;
+    left: 62.5%;
+}
+
+.textbox {
+    color: black;
+    border-radius: 20px;
+    background-color: rgba(244, 151, 108, 0.3);
+    border: 3px solid #D2FDFF;
+    box-shadow: 5px 5px 15px 5px #303C6C;
+    padding: 20px;
+    height: 275px;
+    margin-top: 50px;
+}
+
+.textbox h3 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 150%;
+}
+
+.textbox ul {
+    text-align: left;
+    width: 95%;
+    padding-left: 20px;
+}
+
+.textbox ul,
+.textbox ul li {
+    line-height: 125%;
+}
+
+.portrait {
+    width: 100%;
+    border-radius: 50%;
+    border: 20px ridge #F4976C;
+}
+
+/* +-------------------+ */
+/* |     Section 2     | */
+/* +-------------------+ */
+.skill {
+    background-color: rgba(251, 232, 166, 0.8);
+}
+
+.skillbox {
     margin: 50px 0px 0px 0px;
     text-align: center;
     position: relative;
@@ -177,6 +246,12 @@ section {
     border-radius: 50%;
     border: 2px solid #F4976C;
     box-shadow: 5px 5px 15px 5px #F4976C;
+    transition: all 0.5s;
+}
+
+.skillicon:hover,
+.skillicon:active {
+    transform: translate(0%, -5%);
 }
 
 .skillicon img {
@@ -188,7 +263,7 @@ section {
 
 .skillicon:hover img,
 .skillicon:active img {
-    filter: brightness(50%) blur(2px);
+    filter: brightness(25%);
 }
 
 .skilltitle {
@@ -199,7 +274,7 @@ section {
     left: 50%;
     position: absolute;
     opacity: 0;
-    transform: translate(-50%, 150%);
+    transform: translate(-50%, 50%);
     transition: all 0.5s;
 }
 
@@ -207,4 +282,39 @@ section {
 .skillicon:active .skilltitle {
     transform: translate(-50%, -50%);
     opacity: 1;
+}
+
+/* +-------------------+ */
+/* |     Section 3     | */
+/* +-------------------+ */
+.award {
+    background-color: rgba(251, 232, 166, 0.9);
+}
+
+.awardbox {
+    height: 50vh;
+    background-color:#303C6C;
+    vertical-align: middle;
+    margin-top: 75px;
+    font-weight: 500;
+    padding: 25px;
+    border: 5px solid #CD7F32;
+    box-shadow: 5px 5px 15px 5px #F4976C;
+}
+
+.poster {
+    padding: 0px;
+    width: 100%;
+}
+
+.gold {
+    color: #FFD700;
+}
+
+.silver {
+    color: #C0C0C0;
+}
+
+.bronze {
+    color: #CD7F32;
 }
