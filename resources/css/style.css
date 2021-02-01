@@ -24,6 +24,10 @@ html {
     clear: both;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 h1, h2 {
     letter-spacing: 1px;
 }
@@ -58,6 +62,12 @@ ul {
     list-style-type: none;
 }
 
+li {
+    color: black;
+    font-weight: 500;
+    font-size: 100%;
+}
+
 header, section {
     height: 100vh;
 }
@@ -72,6 +82,32 @@ header {
 
 section {
     padding: 50px;
+}
+
+footer {
+    text-align: center;
+    background-color: #B4DFE5;
+    color: black;
+    padding: 20px;
+    line-height: 125%;
+}
+
+input, textarea {
+    outline: none;
+}
+
+textarea {
+    resize: none;
+}
+
+sup {
+    vertical-align: super;
+    font-size: small;
+}
+
+sub {
+    vertical-align: sub;
+    font-size: small;
 }
 
 .box {
@@ -95,6 +131,7 @@ section {
     display: inline-block;
     text-align: center;
     transition: all 0.3s;
+    margin-bottom: 10px;
 }
 
 .button:hover,
@@ -111,13 +148,14 @@ section {
     float: left;
     margin-left: 50px;
     margin-top: 25px;
+    margin-bottom: -75px;
 }
 
 .headerlink {
     float: right;
     list-style: none;
     margin-top: 50px;
-    margin-right: 50px;
+    margin-right: 25px;
 }
 
 .headerlink li {
@@ -147,17 +185,48 @@ section {
     width: 1140px;
 }
 
-/* +-------------------+ */
-/* |     Section 0     | */
-/* +-------------------+ */
-/* .spacing {
-    height: 50vh;
-    background: linear-gradient(45deg, rgba(48, 60, 108, 0.6), 
-        rgba(244, 151, 108, 0.55), rgba(251, 232, 166, 0.5)), url(../img/header_background.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-} */
+.queryclearfix1, .queryclearfix2 {
+    float: left;
+}
+
+/* +----------------+ */
+/* |     Sticky     | */
+/* +----------------+ */
+.sticky {
+    background-color: rgba(244, 151, 108, 0.9);
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    z-index: 900;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.sticky .githublogo {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.sticky .headerlink {
+    margin-top: 30px;
+}
+
+/* +--------------------------+ */
+/* |     Mobile link icon     | */
+/* +--------------------------+ */
+.mobilelinkicon {
+    font-size: 200%;
+    color: darkblue;
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    display: none;
+    cursor: pointer;
+}
+
+.sticky .mobilelinkicon {
+    top: 25px;
+}
 
 /* +-------------------+ */
 /* |     Section 1     | */
@@ -184,11 +253,11 @@ section {
 }
 
 .quote:after {
-    content: "\201E";
+    content: "\201D";
     font-size: 400%;
     position: absolute;
-    top: 5%;
-    left: 62.5%;
+    top: 95%;
+    left: 60%;
 }
 
 .textbox {
@@ -197,14 +266,14 @@ section {
     background-color: rgba(244, 151, 108, 0.3);
     border: 3px solid #D2FDFF;
     box-shadow: 5px 5px 15px 5px #303C6C;
-    padding: 20px;
-    height: 275px;
+    padding: 0px 20px 20px 20px;
     margin-top: 50px;
+    font-size: 100%;
 }
 
 .textbox h3 {
     text-align: center;
-    margin-bottom: 25px;
+    margin: 10px auto;
     font-size: 150%;
 }
 
@@ -223,6 +292,7 @@ section {
     width: 100%;
     border-radius: 50%;
     border: 20px ridge #F4976C;
+    margin-top: 15px;
 }
 
 /* +-------------------+ */
@@ -247,11 +317,12 @@ section {
     border: 2px solid #F4976C;
     box-shadow: 5px 5px 15px 5px #F4976C;
     transition: all 0.5s;
+    cursor: pointer;
 }
 
 .skillicon:hover,
 .skillicon:active {
-    transform: translate(0%, -5%);
+    transform: scale(1.2);
 }
 
 .skillicon img {
@@ -304,7 +375,6 @@ section {
 
 .poster {
     padding: 0px;
-    width: 100%;
 }
 
 .gold {
@@ -317,4 +387,75 @@ section {
 
 .bronze {
     color: #CD7F32;
+}
+
+/* +-------------------+ */
+/* |     Section 4     | */
+/* +-------------------+ */
+.contact {
+    background: linear-gradient(45deg, rgba(48, 60, 108, 0.6), 
+        rgba(244, 151, 108, 0.55), rgba(251, 232, 166, 0.5)), url(../img/contact_background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.info {
+    line-height: 200%;
+    margin-top: 50px;
+}
+
+.info li {
+    font-weight: 700;
+    font-size: 95%;
+}
+
+.contacticon {
+    color: #303C6C;
+    font-size: 150%;
+}
+
+.info .contacticon:hover,
+.info .contacticon:active {
+    transform: scale(1.2);
+}
+
+.social li {
+    margin-top: 50px;
+    margin-left: 25px;
+    display: inline-block;
+    color: white;
+    font-size: 250%;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.social li:hover,
+.social li:active {
+    transform: scale(1.2);
+}
+
+.social li .facebook:hover,
+.social li .facebook:active {
+    color: #303C6C;
+}
+
+.social li .twitter:hover,
+.social li .twitter:active {
+    color: #6BD4E2;
+}
+
+.social li .google:hover,
+.social li .google:active {
+    color: #CC0000;
+}
+
+.social li .instagram:hover,
+.social li .instagram:active {
+    color: #833AB4;
+}
+
+#location {
+    height: 400px;
+    width: 100%;
 }

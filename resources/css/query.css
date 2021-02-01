@@ -1,0 +1,152 @@
+@media only screen and (max-width: 1200px) {
+    html {
+        font-size: 18px;
+    }
+
+    .headerbox {
+        transform: translate(-35%, -50%);
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    html {
+        font-size: 16px;
+    }
+
+    .headerbox {
+        transform: translate(-30%, -50%);
+    }
+
+    .queryclearfix2 {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .quote:before {
+        top: -5%;
+        left: 30%;
+    }
+
+    .quote:after {
+        top: 95%;
+        left: 65%;
+    }
+
+    .social li {
+        margin-left: 20px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    html {
+        font-size: 15px;
+    }
+
+    .headerlink {
+        margin-top: 100px;
+        display: none;
+    }
+
+    .queryclearfix1 {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .mobilelinkicon {
+        display: block;
+    }
+
+    .headerbox {
+        transform: translate(-20%, -50%);
+    }
+
+    h1 {
+        word-spacing: 1px;
+        font-size: 200%;
+    }
+
+    .button {
+        width: 25%;
+        display: block;
+        margin-left: 5%;
+    }
+
+    .col, .skillbox {
+        width: 50%;
+    }
+
+    .quote, .textbox, .awardbox, .contactbox {
+        width: 100%;
+        font-size: 110%;
+    }
+
+    .quote:before {
+        top: -5%;
+        left: 20%;
+    }
+
+    .quote:after {
+        top: 95%;
+        left: 70%;
+    }
+
+    .contactbox {
+        margin-bottom: 100px;
+        text-align: center;
+    }
+
+    .imgbox {
+        width: 50%;
+        margin: 0px 25%;
+    }
+
+    .social li {
+        margin-left: 15px;
+    }
+
+    .aboutme, .award, .contact {
+        height: 150vh;
+    }
+    
+    .info i {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    html {
+        font-size: 14px;
+    }
+
+    .headerbox {
+        transform: translate(-15%, -50%);
+    }
+
+    h1 {
+        font-size: 150%;
+    }
+
+    .button {
+        margin-left: 2%;
+    }
+
+    .quote:before {
+        top: -5%;
+        left: 10%;
+    }
+
+    .quote:after {
+        top: 95%;
+        left: 80%;
+    }
+
+    .skill {
+        height: 200vh;
+    }
+
+    .skillbox {
+        width: 100%;
+    }
+}
