@@ -21,7 +21,7 @@ $(document).ready(
 
         $('.mobilelinkicon').click(
             function() {
-                $('.headerlink').slideToggle(250);
+                $('.headerlink').slideToggle(100);
                 if ($('.mobilelinkicon').hasClass('fa-bars')) {
                     $('.mobilelinkicon').addClass('fa-times');
                     $('.mobilelinkicon').removeClass('fa-bars')

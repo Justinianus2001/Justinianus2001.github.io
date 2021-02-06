@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Cache-control" content="public">
         <title>Justinianus (Hoang Le Ngoc)</title>
         <link rel="apple-touch-icon" sizes="180x180" href="./resources/favicon/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="./resources/favicon/favicon-32x32.png">
@@ -16,7 +17,7 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
             integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
             crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="./vendors/css/grid.css">
         <link rel="stylesheet" type="text/css" href="./resources/css/style.css">
         <link rel="stylesheet" type="text/css" href="./resources/css/query.css">
@@ -174,7 +175,7 @@
                 </div>
                 <div class="col span_3_of_5 contactbox">
                     <div id="location"></div>
-                    <script>
+                    <script defer>
                         function initMap() {
                             const position = { lat: 16.459097, lng: 107.606874 };
                             const map = new google.maps.Map(document.getElementById("location"), {
@@ -196,18 +197,20 @@
         <footer>
             <p>
                 Copyright &copy; 2021 by Justinanus <br>
-                Time: <span id="datetime"></span><sup>GMT+7</sup>
+                Time: <span id="datetime"></span><sup>GMT+7</sup> <br> <br>
+                Supported by <br>
+                <img class="supportlogo" src="./resources/img/github_logo.png" alt="Github">
             </p>
-            <script>
+            <script defer>
                 const time = setInterval(function() {
 					document.getElementById("datetime").innerHTML = new Date().toLocaleString();
 				});
             </script>
         </footer>
-        <script src="https://code.jquery.com/jquery-3.5.1.js"
+        <script defer src="https://code.jquery.com/jquery-3.5.1.js"
             integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
             crossorigin="anonymous"></script>
-        <script src="./vendors/js/jquery.waypoints.min.js"></script>
-        <script src="./resources/js/script.js"></script>
+        <script defer src="./vendors/js/jquery.waypoints.min.js"></script>
+        <script defer src="./resources/js/script.js"></script>
     </body>
 </html>
