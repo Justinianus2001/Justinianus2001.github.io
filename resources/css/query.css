@@ -21,6 +21,7 @@
         content: "";
         display: table;
         clear: both;
+        float: none;
     }
 
     .quote:before {
@@ -40,7 +41,7 @@
 
 @media only screen and (max-width: 767px) {
     html {
-        font-size: 15px;
+        font-size: 14px;
     }
 
     .headerlink {
@@ -52,10 +53,15 @@
         content: "";
         display: table;
         clear: both;
+        float: none;
     }
 
     .mobilelinkicon {
         display: block;
+    }
+
+    .textbox {
+        padding: 0px 20px 20px 0px;
     }
 
     .headerbox {
@@ -92,6 +98,10 @@
         left: 70%;
     }
 
+    .portrait {
+        margin-top: 0px;
+    }
+
     .contactbox {
         margin-bottom: 100px;
         text-align: center;
@@ -117,11 +127,11 @@
 
 @media only screen and (max-width: 480px) {
     html {
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .headerbox {
-        transform: translate(-15%, -50%);
+        transform: translate(-14%, -50%);
     }
 
     h1 {
@@ -129,7 +139,7 @@
     }
 
     .button {
-        margin-left: 2%;
+        margin-left: 1%;
     }
 
     .quote:before {
