@@ -7,8 +7,12 @@
         <meta name="author" content="Justinanus">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta http-equiv="Cache-control" content="public">
-        <link rel="canonical" href="https://127.0.0.1:5500/index.html">
+        <meta http-equiv="pragma" content="no-cache">
+        <meta http-equiv="expires" content="-1">
+        <meta name="google-site-verification" content="nbVtYh8yf2yov-95hGG7WgpK2TjQpEUZa3idVR965Hg">
+        <link rel="canonical" href="https://justinianus2001.github.io">
+        <!-- <link rel="canonical" href="http://127.0.0.1:5500/index.html"> -->
+        <link rel="home" href="https://justinianus2001.github.io/">
         <title>Justinianus (Hoang Le Ngoc)</title>
         <link rel="apple-touch-icon" sizes="180x180" href="./resources/favicon/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="./resources/favicon/favicon-32x32.png">
@@ -22,8 +26,6 @@
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
             integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
             crossorigin="anonymous" media="all">
-        <!-- <link rel="stylesheet"
-            href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" media="all"> -->
         <link rel="stylesheet" type="text/css" href="./vendors/css/grid.css" media="all">
         <link rel="stylesheet" type="text/css" href="./resources/css/style.css" media="all">
         <link rel="stylesheet" type="text/css" href="./resources/css/query.css" media="screen">
@@ -168,7 +170,8 @@
             <div class="box">
                 <div class="col span_2_of_5 contactbox">
                     <ul class="info">
-                        <li><i class="fas fa-map-marker-alt contacticon"></i> Address: 134, Truong Chinh street, Hue</li>
+                        <li>
+                            <i class="fas fa-map-marker-alt contacticon"></i> Address: 134, Truong Chinh street, Hue</li>
                         <li><i class="fas fa-envelope contacticon"></i> Email: lengochoang681@gmail.com</li>
                         <li><i class="fas fa-phone contacticon"></i> Phone: (+084)-935-229-074</li>
                     </ul>
@@ -180,7 +183,15 @@
                     </ul>
                 </div>
                 <div class="col span_3_of_5 contactbox">
-                    <div id="location"></div>
+                    <iframe title="Google Maps" width="100%" height="400" frameborder="0"
+                        scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas"
+                        src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=134%20Truong%20Chinh%20Hu%E1%BA%BF+(My%20Location)&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                    </iframe>
+                    <a href='http://mapseinbinden.org'>My Location in Google Maps</a>
+                    <script
+                        src='https://embedmaps.com/google-maps-authorization/script.js?
+                        id=029eed8be1feb8e4ce875b1f112ca78234b76789'>
+                    </script>
                 </div>
             </div>
         </section>
@@ -195,9 +206,6 @@
         <script src="https://code.jquery.com/jquery-3.5.1.js"
             integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
             crossorigin="anonymous"></script>
-        <script defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6hbpVX0a0xJL4_my6Z-zVy-tZ42d1qXQ&callback=initMap&libraries=&v=weekly">
-        </script>
         <script src="./vendors/js/jquery.waypoints.min.js"></script>
         <script src="./resources/js/script.js"></script>
     </body>

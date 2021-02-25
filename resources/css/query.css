@@ -88,6 +88,14 @@
         font-size: 110%;
     }
 
+    .boxflex {
+        display: block;
+    }
+
+    ul.awardbox {
+        height: 50vh;
+    }
+
     .quote:before {
         top: -5%;
         left: 20%;
@@ -158,5 +166,9 @@
 
     .skillbox {
         width: 100%;
+    }
+
+    ul.awardbox {
+        height: 25vh;
     }
 }
